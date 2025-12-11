@@ -4,7 +4,7 @@ export default function HotTrack() {
   return (
     <div className={"flex flex-col gap-6"}>
       {/*TODO: api로 트랙 불러오면 map으로 돌리기*/}
-      <h3 className={"text-xl font-bold"}>Hot Track</h3>
+      <h3 className={"text-xl font-bold"}>인기 트랙</h3>
       <Item variant={"outline"} className={"p-6"}>
         <ItemContent className={"flex flex-col items-center justify-between gap-3"}>
           <div className={"flex w-full flex-row gap-4"}>

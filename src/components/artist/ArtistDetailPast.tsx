@@ -11,13 +11,13 @@ export default function ArtistDetailPast() {
     <section className={"flex flex-col gap-8 bg-white px-13 py-16"}>
       {/*헤더 및 분류 버튼 파트*/}
       <div className={"flex justify-between"}>
-        <h2 className={"text-3xl font-bold"}>Past Concerts</h2>
+        <h2 className={"text-3xl font-bold"}>지난 공연</h2>
         <div className={"flex gap-3"}>
           <DropdownButton
             button={
               <Button variant={"outline"} className={"flex gap-2"} size={"lg"}>
                 <Funnel size={12} fill={"true"} />
-                <span>Filter</span>
+                <span>필터</span>
               </Button>
             }
           />
@@ -25,7 +25,7 @@ export default function ArtistDetailPast() {
             button={
               <Button variant={"outline"} className={"flex gap-2"} size={"lg"}>
                 <ChevronsUpDown size={12} fill={"true"} />
-                <span>Sort by Date</span>
+                <span>날짜순 정렬</span>
               </Button>
             }
           />
@@ -45,7 +45,7 @@ export default function ArtistDetailPast() {
             className={"cursor-pointer border-2"}
             type={"button"}
           >
-            <span className={"font-bold"}>Load More Concerts</span>
+            <span className={"font-bold"}>지난 공연 더 보기</span>
           </Button>
         </Link>
       </div>

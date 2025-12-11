@@ -2,7 +2,7 @@ export default function ArtistDetailAbout() {
   return (
     <>
       <div className={"flex flex-col gap-6"}>
-        <h3 className={"text-2xl font-bold"}>About the Artist</h3>
+        <h3 className={"text-2xl font-bold"}>아티스트 소개</h3>
         <span>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias culpa, debitis ipsa iste
           nobis veniam! Culpa, dolorem eius enim hic id illum nam obcaecati praesentium quos

@@ -18,25 +18,27 @@ export default function ArtistDetailProfile() {
               <div className={"flex flex-col gap-4"}>
                 <h2 className={"text-5xl"}>Kim Min-ji</h2>
                 <div className={"flex gap-3"}>
-                  <Badge className={"bg-text-point-sub text-text-main text-sm"}>Solo Artist</Badge>
-                  <Badge className={"bg-text-point-sub text-text-main text-sm"}>Pop</Badge>
+                  <Badge className={"bg-text-point-sub text-text-main text-sm"}>
+                    솔로 아티스트
+                  </Badge>
+                  <Badge className={"bg-text-point-sub text-text-main text-sm"}>팝</Badge>
                   <Badge className={"bg-text-point-sub text-text-main text-sm"}>R&B</Badge>
                 </div>
               </div>
               <Button className={"cursor-pointer text-base"} size={"lg"}>
-                <Heart /> <span>Follow</span>
+                <Heart /> <span>팔로우</span>
               </Button>
             </div>
             {/*팔로워 수, 다가올 콘서트 부분*/}
             <div className={"flex gap-8"}>
-              <div className={"flex flex-col gap-1"}>
+              <div className={"flex flex-col items-center justify-center gap-1"}>
                 <span className={"text-text-main text-3xl"}>12.4K</span>
-                <span className={"text-text-sub"}>Followers</span>
+                <span className={"text-text-sub"}>팔로워</span>
               </div>
               <Separator orientation={"vertical"} />
-              <div className={"flex flex-col gap-1"}>
+              <div className={"flex flex-col items-center justify-center gap-1"}>
                 <span className={"text-text-main text-3xl"}>24</span>
-                <span className={"text-text-sub"}>Upcoming Concerts</span>
+                <span className={"text-text-sub"}>예정된 공연</span>
               </div>
             </div>
             {/*소셜 버튼 모음 부분*/}
