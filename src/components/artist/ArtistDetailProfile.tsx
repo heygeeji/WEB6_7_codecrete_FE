@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { DiscAlbum, Heart, Instagram, Twitter, Youtube } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
-export default function ArtistProfile() {
+export default function ArtistDetailProfile() {
   return (
     <>
       <section className={"bg-bg-sub flex h-100 items-center gap-12 border-y px-13 py-16"}>
