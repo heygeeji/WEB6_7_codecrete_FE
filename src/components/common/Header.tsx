@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 export default function Header() {
   return (
     <header className="border-border bg-bg-main sticky -top-21 left-0 z-50 flex w-full justify-center border-b">
-      <div className="w-full max-w-400 space-y-8 py-8">
+      <div className="w-full max-w-400 space-y-8 px-15 py-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-10">
             <h1>

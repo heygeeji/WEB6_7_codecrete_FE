@@ -23,7 +23,7 @@ export default function FeaturedSlider() {
 
   return (
     <section className="bg-bg-sub w-full overflow-hidden py-20">
-      <div className="mx-auto mb-10 flex w-full max-w-400 items-center justify-between px-5 xl:px-0">
+      <div className="mx-auto mb-10 flex w-full max-w-400 items-center justify-between px-15">
         <div className="space-y-2">
           <h2 className="text-text-main text-3xl font-extrabold">
             💖 당신의 취향을 저격할 아티스트
@@ -50,7 +50,7 @@ export default function FeaturedSlider() {
         </div>
       </div>
 
-      <div className="m-auto max-w-400">
+      <div className="m-auto w-full max-w-400 px-15">
         <Swiper onSwiper={setSwiperInstance} slidesPerView={5} spaceBetween={24} loop={true}>
           {Array.from({ length: 10 }).map((_, index) => (
             <SwiperSlide key={index} className="group">

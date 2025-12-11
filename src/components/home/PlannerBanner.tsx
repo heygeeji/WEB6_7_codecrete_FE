@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 
 export default function PlannerBanner() {
   return (
-    <section className="mx-auto my-20 w-full max-w-400">
+    <section className="mx-auto my-20 w-full max-w-400 px-15">
       <Card className="bg-bg-sub bg-[url('/images/bn_planner.png')] bg-contain bg-right bg-no-repeat px-16 py-20">
         <h2 className="text-text-main text-5xl leading-normal font-bold">
           완벽한 공연, <br />그 이상의 하루를 위해

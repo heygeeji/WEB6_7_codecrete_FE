@@ -19,7 +19,7 @@ export default function UpcomingSlider() {
 
   return (
     <section className="w-full overflow-hidden py-20">
-      <div className="mx-auto mb-10 flex w-full max-w-400 items-center justify-between px-5 xl:px-0">
+      <div className="mx-auto mb-10 flex w-full max-w-400 items-center justify-between px-15">
         <div className="space-y-2">
           <h2 className="text-text-main text-3xl font-extrabold">🎫 예매일 임박! 콘서트 모음</h2>
           <p className="text-text-sub text-base font-medium">
@@ -44,7 +44,7 @@ export default function UpcomingSlider() {
         </div>
       </div>
 
-      <div className="m-auto max-w-400">
+      <div className="m-auto w-full max-w-400 px-15">
         <Swiper
           onSwiper={setSwiperInstance}
           slidesPerView="auto"
