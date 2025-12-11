@@ -14,9 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body className={twMerge("min-h-dvh", pretendard.className)}>
+      <body className={twMerge("min-h-dvh text-sm", pretendard.className)}>
         <Header />
-        {children}
+        <main className="min-h-dvh">{children}</main>
         <Footer />
       </body>
     </html>
