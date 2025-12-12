@@ -1,8 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { ChevronsUpDown, Funnel } from "lucide-react";
-import DropdownButton from "@/components/artist/detail/DropdownButton";
 import Link from "next/link";
 import ArtistConcertItem from "@/components/artist/detail/ArtistConcertItem";
+import { SortSelect } from "@/components/common/SortSelect";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 // TODO: 나중에 api로 불러와서 데이터가 없는경우 로직도 추가 구현해야 함
 
@@ -14,22 +22,20 @@ export default function ArtistDetailUpcoming() {
         <div className={"flex justify-between"}>
           <h2 className={"text-3xl font-bold"}>예정된 공연</h2>
           <div className={"flex gap-3"}>
-            <DropdownButton
-              button={
-                <Button variant={"outline"} className={"flex gap-2"} size={"lg"}>
-                  <Funnel size={12} fill={"true"} />
-                  <span>필터</span>
-                </Button>
-              }
-            />
-            <DropdownButton
-              button={
-                <Button variant={"outline"} className={"flex gap-2"} size={"lg"}>
-                  <ChevronsUpDown size={12} fill={"true"} />
-                  <span>날짜순 정렬</span>
-                </Button>
-              }
-            />
+            <Select>
+              <SelectTrigger size="default" className="bg-point-sub w-22">
+                <SelectValue placeholder="필터" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectLabel>정렬</SelectLabel>
+                  <SelectItem value="popular">인기순</SelectItem>
+                  <SelectItem value="name">이름순</SelectItem>
+                  <SelectItem value="date">날짜순</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+            <SortSelect />
           </div>
         </div>
         {/*TODO: 나중에 바로 아래 div에서 api로 불러온 콘서트 목록 map으로 돌리기*/}
