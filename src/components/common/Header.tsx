@@ -6,8 +6,8 @@ import { Input } from "@/components/ui/input";
 
 export default function Header() {
   return (
-    <header className="border-border bg-bg-main sticky -top-21 left-0 z-50 flex w-full justify-center border-b">
-      <div className="w-full max-w-400 space-y-8 px-15 py-8">
+    <header className="border-border bg-bg-main sticky -top-21 left-0 z-50 flex w-full justify-center border-b px-15">
+      <div className="w-full max-w-400 space-y-8 py-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-10">
             <h1>
@@ -29,17 +29,17 @@ export default function Header() {
           {/* TODO: 유저 로그인 여부 확인 후 토글 */}
           {/* 비회원일 때 */}
           <div className="space-x-8 text-zinc-500">
-            <Link className="hover:font-medium" href="/login">
+            <Link className="hover:font-medium" href="/sign-in">
               로그인
             </Link>
-            <Link className="hover:font-medium" href="/signup">
+            <Link className="hover:font-medium" href="/sign-up">
               회원가입
             </Link>
           </div>
           {/* 회원일 때 */}
           {/* <div>
-            <Link className="hover:font-medium" href="/sign-in">로그인</Link>
-            <Link className="hover:font-medium" href="/sign-up">회원가입</Link>
+            <Link className="hover:font-medium" href="/my-page">마이페이지</Link>
+            <Link className="hover:font-medium" href="#">로그아웃</Link>
           </div> */}
         </div>
         <nav className="space-x-15 text-xl font-semibold text-zinc-900">

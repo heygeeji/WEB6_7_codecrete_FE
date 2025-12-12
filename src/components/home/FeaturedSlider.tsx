@@ -22,35 +22,35 @@ export default function FeaturedSlider() {
   };
 
   return (
-    <section className="bg-bg-sub w-full overflow-hidden py-20">
-      <div className="mx-auto mb-10 flex w-full max-w-400 items-center justify-between px-15">
-        <div className="space-y-2">
-          <h2 className="text-text-main text-3xl font-extrabold">
-            💖 당신의 취향을 저격할 아티스트
-          </h2>
-          <p className="text-text-sub text-base font-medium">
-            팔로우하고 공연 소식 제일 먼저 받아보세요!
-          </p>
+    <section className="bg-bg-sub w-full overflow-hidden px-15 py-20">
+      <div className="mx-auto max-w-400">
+        <div className="mb-10 flex items-center justify-between">
+          <div className="space-y-2">
+            <h2 className="text-text-main text-3xl font-extrabold">
+              💖 당신의 취향을 저격할 아티스트
+            </h2>
+            <p className="text-text-sub text-base font-medium">
+              팔로우하고 공연 소식 제일 먼저 받아보세요!
+            </p>
+          </div>
+          <div className="flex gap-4">
+            <Button
+              variant="outline"
+              onClick={() => swiperInstance?.slidePrev()} // 인스턴스 사용
+              className="size-12 cursor-pointer rounded-full"
+            >
+              <ChevronLeft className="stroke-border-point size-6" />
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => swiperInstance?.slideNext()} // 인스턴스 사용
+              className="size-12 cursor-pointer rounded-full"
+            >
+              <ChevronRight className="stroke-border-point size-6" />
+            </Button>
+          </div>
         </div>
-        <div className="flex gap-4">
-          <Button
-            variant="outline"
-            onClick={() => swiperInstance?.slidePrev()} // 인스턴스 사용
-            className="size-12 cursor-pointer rounded-full"
-          >
-            <ChevronLeft className="stroke-border-point size-6" />
-          </Button>
-          <Button
-            variant="outline"
-            onClick={() => swiperInstance?.slideNext()} // 인스턴스 사용
-            className="size-12 cursor-pointer rounded-full"
-          >
-            <ChevronRight className="stroke-border-point size-6" />
-          </Button>
-        </div>
-      </div>
 
-      <div className="m-auto w-full max-w-400 px-15">
         <Swiper onSwiper={setSwiperInstance} slidesPerView={5} spaceBetween={24} loop={true}>
           {Array.from({ length: 10 }).map((_, index) => (
             <SwiperSlide key={index} className="group">
