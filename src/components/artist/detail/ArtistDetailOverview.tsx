@@ -1,8 +1,8 @@
-import ArtistDetailAbout from "@/components/artist/ArtistDetailAbout";
-import Discography from "@/components/artist/Discography";
-import QuickStat from "@/components/artist/QuickStat";
-import HotTrack from "@/components/artist/HotTrack";
-import SimilarArtists from "@/components/artist/SimilarArtists";
+import ArtistDetailAbout from "@/components/artist/detail/ArtistDetailAbout";
+import Discography from "@/components/artist/detail/Discography";
+import QuickStat from "@/components/artist/detail/QuickStat";
+import HotTrack from "@/components/artist/detail/HotTrack";
+import SimilarArtists from "@/components/artist/detail/SimilarArtists";
 export default function ArtistDetailOverview() {
   return (
     <section className={"px-15 py-16"}>

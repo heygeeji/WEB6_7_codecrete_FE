@@ -1,18 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { ChevronsUpDown, Funnel } from "lucide-react";
-import DropdownButton from "@/components/artist/DropdownButton";
+import DropdownButton from "@/components/artist/detail/DropdownButton";
 import Link from "next/link";
-import ArtistConcertItem from "@/components/artist/ArtistConcertItem";
+import ArtistConcertItem from "@/components/artist/detail/ArtistConcertItem";
 
 // TODO: 나중에 api로 불러와서 데이터가 없는경우 로직도 추가 구현해야 함
 
-export default function ArtistDetailUpcoming() {
+export default function ArtistDetailPast() {
   return (
-    <section className={"bg-bg-sub px-13 py-16"}>
+    <section className={"bg-bg-main px-13 py-16"}>
       <div className={"mx-auto flex max-w-400 flex-col gap-8"}>
         {/*헤더 및 분류 버튼 파트*/}
         <div className={"flex justify-between"}>
-          <h2 className={"text-3xl font-bold"}>예정된 공연</h2>
+          <h2 className={"text-3xl font-bold"}>지난 공연</h2>
           <div className={"flex gap-3"}>
             <DropdownButton
               button={
@@ -37,8 +37,8 @@ export default function ArtistDetailUpcoming() {
         <div>
           <ArtistConcertItem />
         </div>
-        {/*콘서트 로더 버튼 파트*/}
         <div className={"flex justify-center"}>
+          {/*콘서트 로더 버튼 파트*/}
           <Link href={"#"}>
             <Button
               size={"lg"}
@@ -46,7 +46,7 @@ export default function ArtistDetailUpcoming() {
               className={"cursor-pointer border-2"}
               type={"button"}
             >
-              <span className={"font-bold"}>콘서트 더 보기</span>
+              <span className={"font-bold"}>지난 공연 더 보기</span>
             </Button>
           </Link>
         </div>
