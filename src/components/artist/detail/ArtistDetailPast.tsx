@@ -8,7 +8,7 @@ import ArtistConcertItem from "@/components/artist/detail/ArtistConcertItem";
 
 export default function ArtistDetailPast() {
   return (
-    <section className={"bg-bg-main px-13 py-16"}>
+    <section className={"bg-bg-main px-15 py-16"}>
       <div className={"mx-auto flex max-w-400 flex-col gap-8"}>
         {/*헤더 및 분류 버튼 파트*/}
         <div className={"flex justify-between"}>

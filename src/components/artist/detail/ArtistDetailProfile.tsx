@@ -5,9 +5,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function ArtistDetailProfile() {
   return (
-    <section
-      className={"bg-bg-sub border-border flex h-100 items-center gap-12 border-b px-13 py-16"}
-    >
+    <section className={"bg-bg-sub border-border flex items-center gap-12 border-b px-15 py-16"}>
       <div className={"mx-auto flex w-full max-w-400 gap-12"}>
         {/*프로필 이미지 파트*/}
         <div
