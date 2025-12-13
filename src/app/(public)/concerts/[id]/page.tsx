@@ -1,4 +1,5 @@
 import BreadcrumbNav from "@/components/common/BreadcrumbNav";
+import ConcertDetail from "@/components/concert/ConcertDetail";
 import ConcertHeader from "@/components/concert/ConcertHeader";
 
 export default function Page() {
@@ -6,7 +7,7 @@ export default function Page() {
     <>
       <BreadcrumbNav itemType="공연" itemDetail="2025 Christmas Concert" />
       <ConcertHeader />
-      <section className="content bg-bg-main"></section>
+      <ConcertDetail />
       <section className="similar bg-bg-sub"></section>
     </>
   );
