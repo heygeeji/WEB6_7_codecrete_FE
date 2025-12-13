@@ -13,6 +13,8 @@ import Image from "next/image";
 import { Calendar, Clock4, Star } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import ReviewDetailRating from "@/components/review/write/ReviewDetailRating";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function ReviewWriteMain() {
   return (
@@ -120,6 +122,22 @@ export default function ReviewWriteMain() {
             <ReviewDetailRating title={"Venue & Facilities"} />
             <ReviewDetailRating title={"Sound Quality"} />
             <ReviewDetailRating title={"Value for Money"} />
+          </CardContent>
+
+          <CardContent>
+            <div className="grid w-full gap-3">
+              <Label htmlFor="message-2">
+                Your Review<span className={"text-text-sub"}>*</span>
+              </Label>
+              <Textarea
+                className={"h-50 resize"}
+                placeholder="Share your detailed thoughts about the concert. What made it special? How was the atmosphere? Would you recommend it to others?"
+                id="message-2"
+              />
+              <p className="text-text-sub text-xs">
+                Minimum 100 characters. Be specific and helpful to other concert-goers.
+              </p>
+            </div>
           </CardContent>
         </Card>
       </div>
