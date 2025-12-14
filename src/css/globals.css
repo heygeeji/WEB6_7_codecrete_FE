@@ -6,6 +6,7 @@
 @import "swiper/css/effect-fade";
 
 @custom-variant dark (&:is(.dark *));
+@custom-variant hover (&:hover);
 
 @theme inline {
   --color-background: var(--background);

@@ -20,8 +20,8 @@ const TEAM_MEMBERS = {
 
 export default function Footer() {
   return (
-    <footer className="border-border bg-bg-main border-t-border w-full border-t">
-      <div className="m-auto flex w-full max-w-400 gap-20 px-15 py-10">
+    <footer className="border-border bg-bg-main border-t-border w-full border-t px-15 py-10">
+      <div className="m-auto flex w-full max-w-400 gap-20">
         <div className="w-1/3 space-y-4">
           <h2 className="text-text-main text-2xl font-black">CodeCrete</h2>
           <div className="text-text-sub space-8">
