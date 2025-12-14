@@ -50,7 +50,7 @@ export default function ConcertSimilar() {
           className="w-full overflow-visible!"
         >
           {Array.from({ length: 10 }).map((_, index) => (
-            <SwiperSlide key={index} className="last:mr-0">
+            <SwiperSlide key={index} className="mr-8 w-auto! last:mr-0">
               <Link className="relative block w-80" href="#">
                 <div className="concert-card rounded-xl">
                   <div className="relative">

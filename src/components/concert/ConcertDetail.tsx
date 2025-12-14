@@ -14,7 +14,7 @@ export default function ConcertDetail() {
           <ConcertDetailReview />
         </div>
 
-        <div className="right flex-1">
+        <div className="right relative flex-1">
           <ConcertDetailSideBar />
         </div>
       </div>
