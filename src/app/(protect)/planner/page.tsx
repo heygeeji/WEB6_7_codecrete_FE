@@ -190,10 +190,12 @@ export default function Page() {
             <PlannerQuickTips />
           </div>
 
-          <div className="flex max-w-125 flex-1 flex-col space-y-8 *:space-y-4 *:rounded-2xl">
-            <PlannerMapView />
-            <PlannerInviteFriends />
-            <PlannerNearbyRestaurants />
+          <div className="max-w-125 flex-1">
+            <div className="sticky top-30 flex flex-col space-y-8 *:space-y-4 *:rounded-2xl">
+              <PlannerMapView />
+              <PlannerInviteFriends />
+              <PlannerNearbyRestaurants />
+            </div>
           </div>
         </div>
       </section>
