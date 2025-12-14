@@ -1,9 +1,9 @@
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import ReviewRatingBar from "./ReviewRatingBar";
+import ReviewRatingBar from "@/components/concert/ReviewRatingBar";
 import { twMerge } from "tailwind-merge";
-import ConcertReviewCard from "./ConcertReviewCard";
-import LoadMoreBtn from "../common/LoadMoreBtn";
+import ConcertReviewCard from "@/components/concert/ConcertReviewCard";
+import LoadMoreBtn from "@/components/common/LoadMoreBtn";
 
 export default function ConcertDetailReview() {
   return (
@@ -43,10 +43,9 @@ export default function ConcertDetailReview() {
         </div>
         <ReviewRatingBar />
       </div>
-
-      <ConcertReviewCard />
-      <ConcertReviewCard />
-      <ConcertReviewCard />
+      {Array.from({ length: 3 }).map((_, index) => (
+        <ConcertReviewCard key={index} />
+      ))}
 
       <LoadMoreBtn />
     </div>

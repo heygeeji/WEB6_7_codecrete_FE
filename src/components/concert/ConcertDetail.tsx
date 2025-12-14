@@ -1,8 +1,8 @@
 import { twMerge } from "tailwind-merge";
-import ConcertDetailVenue from "./ConcertDetailVenue";
-import ConcertDetailReview from "./ConcertDetailReview";
-import ConcertDetailInfo from "./ConcertDetailInfo";
-import ConcertDetailSideBar from "./ConcertDetailSideBar";
+import ConcertDetailVenue from "@/components/concert/ConcertDetailVenue";
+import ConcertDetailReview from "@/components/concert/ConcertDetailReview";
+import ConcertDetailInfo from "@/components/concert/ConcertDetailInfo";
+import ConcertDetailSideBar from "@/components/concert/ConcertDetailSideBar";
 
 export default function ConcertDetail() {
   return (

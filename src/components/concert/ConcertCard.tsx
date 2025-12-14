@@ -9,8 +9,8 @@ export default function ConcertCard({ image, title, date, location }: ConcertCar
         src={image}
         alt="Concert Poster"
         width={375}
-        height={300}
-        className="min-h-[300px] w-full"
+        height={500}
+        className="aspect-3/4 w-full rounded-lg"
       />
       <div className="flex flex-col gap-3">
         <strong className="text-2xl">{title}</strong>

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-import ConcertHeaderTitle from "./ConcertHeaderTitle";
-import ConcertHeaderInfo from "./ConcertHeaderInfo";
-import ConcertHeaderArtist from "./ConcertHeaderArtist";
-import ConcertHeaderBtn from "./ConcertHeaderBtn";
+import ConcertHeaderTitle from "@/components/concert/ConcertHeaderTitle";
+import ConcertHeaderInfo from "@/components/concert/ConcertHeaderInfo";
+import ConcertHeaderArtist from "@/components/concert/ConcertHeaderArtist";
+import ConcertHeaderBtn from "@/components/concert/ConcertHeaderBtn";
 
 export default function ConcertHeader() {
   return (
@@ -14,7 +14,7 @@ export default function ConcertHeader() {
         alt="Concert Poster"
         width={470}
         height={690}
-        className="left min-h-[690px] rounded-2xl shadow-md"
+        className="left aspect-3/4 rounded-2xl shadow-md"
       />
 
       <div
