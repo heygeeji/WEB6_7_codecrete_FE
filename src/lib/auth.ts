@@ -3,7 +3,7 @@ import { LoginResponse } from "@/types/sign-in";
 
 export async function login(email: string, password: string): Promise<LoginResponse> {
   // TODO: 요청 타임아웃 처리(AbortController) 추가 검토
-  const res = await fetch("https://api.app.naeconcertbutakhae.shop/api/v1/auth/login", {
+  const res = await fetch("https://api.naeconcertbutakhae.shop/api/v1/auth/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
