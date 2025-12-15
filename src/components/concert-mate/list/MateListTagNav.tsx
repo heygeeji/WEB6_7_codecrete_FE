@@ -15,7 +15,7 @@ export default function MateListTagNav() {
   const [activeTab, setActiveTab] = useState("all");
 
   return (
-    <nav className="border-border border-y py-4">
+    <nav className="border-border border-y px-15 py-4">
       <div className={twMerge(`mx-auto flex w-full max-w-400 gap-3`)}>
         {tabs.map((tab) => (
           <Button

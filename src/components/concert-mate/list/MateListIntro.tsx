@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 
 export default function MateListIntro() {
   return (
-    <section className="intro bg-bg-sub py-20">
+    <section className="intro bg-bg-sub px-15 py-16">
       <div className={twMerge(`mx-auto flex w-full max-w-400 flex-col gap-8`)}>
         <div className="flex items-center justify-between">
           <div className="flex flex-col gap-2">
