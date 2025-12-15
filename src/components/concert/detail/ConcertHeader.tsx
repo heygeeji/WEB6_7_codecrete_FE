@@ -7,7 +7,7 @@ import ConcertHeaderBtn from "@/components/concert/detail/ConcertHeaderBtn";
 
 export default function ConcertHeader() {
   return (
-    <section className="header bg-bg-sub py-20">
+    <section className="header bg-bg-sub px-15 py-16">
       <div className={twMerge(`mx-auto flex w-full max-w-400 gap-8`)}>
         {/* className = "left" */}
         <Image

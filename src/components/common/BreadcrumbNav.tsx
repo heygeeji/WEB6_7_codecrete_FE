@@ -20,7 +20,7 @@ export default function BreadcrumbNav({
   const parentHref = itemType === "아티스트" ? "/artists" : "/concerts";
 
   return (
-    <nav className={twMerge(`border-border mx-auto w-full max-w-400 border-b py-4`)}>
+    <nav className={twMerge(`border-border mx-auto w-full max-w-400 border-b px-15 py-4`)}>
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>

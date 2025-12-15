@@ -17,7 +17,7 @@ export default function ConcertSimilar() {
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
 
   return (
-    <section className={twMerge(`similar bg-bg-sub flex w-full flex-col gap-8 py-20`)}>
+    <section className={twMerge(`similar bg-bg-sub flex w-full flex-col gap-8 px-15 py-20`)}>
       <div className={twMerge(`header mx-auto flex w-full max-w-400 items-center justify-between`)}>
         <div className="intro flex flex-col gap-1">
           <h2 className="text-text-main text-3xl font-bold">추천 공연</h2>

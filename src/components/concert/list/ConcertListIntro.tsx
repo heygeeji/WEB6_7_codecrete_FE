@@ -2,7 +2,7 @@ import { twMerge } from "tailwind-merge";
 
 export default function ConcertListIntro() {
   return (
-    <section className="intro bg-bg-sub py-20">
+    <section className="intro bg-bg-sub px-15 py-16">
       <div className={twMerge(`mx-auto flex w-full max-w-400 flex-col gap-4`)}>
         <h2 className="text-text-main text-4xl font-bold">Play Your Life, Live Your Music</h2>
         <p className="text-text-sub text-md">
