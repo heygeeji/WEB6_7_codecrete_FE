@@ -1,6 +1,6 @@
 "use client";
 
-import { Eye } from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
 import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/input-group";
 import React, { useState } from "react";
 
@@ -8,12 +8,14 @@ type PasswordInputProps = {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
+  autoComplete?: string;
 };
 
 export default function PasswordInput({
   value,
   onChange,
-  placeholder = "Enter Your Password",
+  placeholder = "비밀번호를 입력하세요",
+  autoComplete,
 }: PasswordInputProps) {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -24,14 +26,18 @@ export default function PasswordInput({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
+        autoComplete={autoComplete}
         className="h-13"
       />
       <InputGroupAddon align="inline-end">
-        <Eye
+        <button
           type={"button"}
-          className={"cursor-pointer"}
+          aria-label={showPassword ? "비밀번호 숨기기" : "비밀번호 표시"}
+          className={"mr-2 cursor-pointer"}
           onClick={() => setShowPassword((prev) => !prev)}
-        />
+        >
+          {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+        </button>
       </InputGroupAddon>
     </InputGroup>
   );
